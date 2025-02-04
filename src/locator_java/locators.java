@@ -30,14 +30,17 @@ public class locators {
 	Thread.sleep(3000);
 	//xpath locator for clicking on cart icon
 	driver.findElement(By.xpath("//*[@id ='nav-cart-count-container']")).click();
-	//name locator for chckout
+	//name locator for checkout
 	driver.findElement(By.name("proceedToRetailCheckout")).click();
 //	driver.findElement(By.name("email")).sendKeys("rontya0801a@gmail.com");
 	//emailField.sendKeys("rontya0801a@gmail.com");
+	//implicit wait for loading login page	
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	driver.findElement(By.xpath("//*[@id='ap_email_login']")).sendKeys("rontya0801a@gmail.com");
+	//classname locator for clicking contineu after entering email	
 	driver.findElement(By.className("a-button-input")).click();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	//link text locator for clicking forgot password	
 	driver.findElement(By.linkText("Forgot password?")).click();
 	}
 }
