@@ -7,8 +7,8 @@ import org.testng.annotations.Test;
 
 public class baseclass {
 	public WebDriver driver;
-	
-	public baseclass (WebDriver driver)
+	@BeforeClass
+	public void base ()
 	{
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.in/");

@@ -1,23 +1,23 @@
 package framework1.test;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import automationpractice.framework1.baseclass;
+import automationpractice.framework1.searchprod;
 
 public class testexecution extends baseclass {
 
 	
-	
-	public testexecution(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
-
+//	WebDriver driver;
+//	public searchprod prod;
+//	@BeforeClass
 	@Test
-	public void test(WebDriver driver)
+	public void Initialization()
 	{
-		baseclass base = new baseclass(driver);
-
+		searchprod prod = new searchprod(driver);
+ 
+		prod.searchproduct();
 	}
 }
