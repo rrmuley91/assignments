@@ -6,7 +6,9 @@
       <class name="framework1.test.testexecution">
         <methods>
           <include name="Initialization"/>
+          <include name="declare"/>
           <include name="base"/>
+          <include name="extendreportconfig"/>
         </methods>
       </class> <!-- framework1.test.testexecution -->
     </classes>

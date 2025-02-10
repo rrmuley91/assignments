@@ -28,7 +28,8 @@ public class searchprod  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		search.sendKeys("mobile");
 //		WebElementdriver.findElement(By.id("twotabsearchtextbox")).sendKeys(Keys.ENTER);
-		search.sendKeys(Keys.ENTER);	
+		search.sendKeys(Keys.ENTER);
+		driver.close();
 	}
 }
 
