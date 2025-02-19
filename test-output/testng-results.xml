@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-18T23:57:36 PST" name="Default suite" finished-at="2025-02-18T23:57:42 PST" duration-ms="5937">
+  <suite started-at="2025-02-19T00:29:28 PST" name="Default suite" finished-at="2025-02-19T00:29:40 PST" duration-ms="12242">
     <groups>
     </groups>
-    <test started-at="2025-02-18T23:57:36 PST" name="Default test" finished-at="2025-02-18T23:57:42 PST" duration-ms="5937">
+    <test started-at="2025-02-19T00:29:28 PST" name="Default test" finished-at="2025-02-19T00:29:40 PST" duration-ms="12242">
       <class name="restassure_demo.allmethods">
-        <test-method signature="deletedata()[pri:0, instance:restassure_demo.allmethods@6572421]" started-at="2025-02-18T23:57:36 PST" name="deletedata" finished-at="2025-02-18T23:57:40 PST" duration-ms="3604" status="PASS">
+        <test-method signature="deletedata()[pri:0, instance:restassure_demo.allmethods@c430e6c]" started-at="2025-02-19T00:29:28 PST" name="deletedata" finished-at="2025-02-19T00:29:36 PST" duration-ms="7757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletedata -->
-        <test-method signature="getdata()[pri:0, instance:restassure_demo.allmethods@6572421]" started-at="2025-02-18T23:57:40 PST" name="getdata" finished-at="2025-02-18T23:57:41 PST" duration-ms="1420" status="PASS">
+        <test-method signature="getdata()[pri:0, instance:restassure_demo.allmethods@c430e6c]" started-at="2025-02-19T00:29:36 PST" name="getdata" finished-at="2025-02-19T00:29:39 PST" duration-ms="2977" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdata -->
-        <test-method signature="postdata()[pri:0, instance:restassure_demo.allmethods@6572421]" started-at="2025-02-18T23:57:41 PST" name="postdata" finished-at="2025-02-18T23:57:41 PST" duration-ms="413" status="PASS">
+        <test-method signature="postdata()[pri:0, instance:restassure_demo.allmethods@c430e6c]" started-at="2025-02-19T00:29:39 PST" name="postdata" finished-at="2025-02-19T00:29:40 PST" duration-ms="521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postdata -->
-        <test-method signature="putdata()[pri:0, instance:restassure_demo.allmethods@6572421]" started-at="2025-02-18T23:57:42 PST" name="putdata" finished-at="2025-02-18T23:57:42 PST" duration-ms="373" status="PASS">
+        <test-method signature="putdata()[pri:0, instance:restassure_demo.allmethods@c430e6c]" started-at="2025-02-19T00:29:40 PST" name="putdata" finished-at="2025-02-19T00:29:40 PST" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putdata -->

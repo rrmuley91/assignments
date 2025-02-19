@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import groovy.transform.stc.MapEntryOrKeyValue;
 
 import static io.restassured.RestAssured.*;
+
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
@@ -17,9 +19,11 @@ import java.util.HashMap;
 
 
 
+
 public class allmethods {
 
 @Test
+@Step("Verify GET request for /users?page=2")
 public void getdata()
 
 	{
@@ -28,6 +32,7 @@ public void getdata()
 	
 	}
 @Test
+@Step("Verify POST request for creating a user")
 public void postdata()
 {
 	Map<String,Object> map = new HashMap<String,Object>();
@@ -43,6 +48,7 @@ public void postdata()
 }
 
 @Test
+@Step("Verify PUT request for updating user with ID 2")
 public void putdata()
 {
 	JSONObject request = new JSONObject();
@@ -55,6 +61,7 @@ public void putdata()
 	then().statusCode(201);
 }
 @Test
+@Step("Verify DELETE request for deleting user with ID 2")
 public void deletedata()
 {
 	baseURI = "https://reqres.in/api";
