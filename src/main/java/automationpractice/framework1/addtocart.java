@@ -8,7 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 public class addtocart {
 	WebDriver driver;
-	public void addtocart(WebDriver driver)
+	public addtocart(WebDriver driver)
+	{
+		this.driver= driver;
+		}
+	public void addtocart()
 	{
 //	driver.findElement(By.xpath("//*[@id='a-autoid-1-announce']"));
 	WebElement addtocart = driver.findElement(By.xpath("//*[@id='a-autoid-1-announce']"));

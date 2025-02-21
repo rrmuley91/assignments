@@ -29,7 +29,8 @@ public class searchprod  {
 		search.sendKeys("mobile");
 //		WebElementdriver.findElement(By.id("twotabsearchtextbox")).sendKeys(Keys.ENTER);
 		search.sendKeys(Keys.ENTER);
-		driver.close();
+		
+//		driver.close();
 	}
 }
 
