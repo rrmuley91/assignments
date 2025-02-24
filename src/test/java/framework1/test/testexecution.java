@@ -57,7 +57,8 @@ public class testexecution extends baseclass {
 	{
 		
 		extent.createTest("First Test");
-		prod.searchproduct();
+//		prod.searchproduct();
+		prod.searchprod("mobile");
 		Thread.sleep(5000);
 		cart.addtocart();
 		Thread.sleep(5000);
