@@ -21,7 +21,7 @@ import automationpractice.framework1.username;
 
 public class testexecution extends baseclass {
 
-	String path = System.getProperty("user.dir")+"\\reports\\extend.html";
+//	String path = System.getProperty("user.dir")+"\\reports\\extend.html";
 
 	searchprod prod;
 	addtocart cart;
@@ -30,9 +30,9 @@ public class testexecution extends baseclass {
 	
 	
 	
-	ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+//	ExtentSparkReporter reporter = new ExtentSparkReporter(path);
 	 
-	 ExtentReports extent = new ExtentReports();
+//	 ExtentReports extent = new ExtentReports();
 
 
 	@BeforeClass
@@ -43,20 +43,20 @@ public class testexecution extends baseclass {
 		 check = new checkout(driver);
 		 uname = new username(driver);
 	}
-	@BeforeTest
-	public void extendreportconfig()
-	{
-		reporter.config().setReportName("Amazon Automation");
-		reporter.config().setDocumentTitle("Results");
-		extent.attachReporter(reporter);
-		extent.setSystemInfo("Tester", "Rohit Muley");
-	}
+//	@BeforeTest
+//	public void extendreportconfig()
+//	{
+//		reporter.config().setReportName("Amazon Automation");
+//		reporter.config().setDocumentTitle("Results");
+//		extent.attachReporter(reporter);
+//		extent.setSystemInfo("Tester", "Rohit Muley");
+//	}
 	
 	@Test
 	public void Initialization() throws InterruptedException
 	{
 		
-		extent.createTest("First Test");
+//		extent.createTest("First Test");
 //		prod.searchproduct();
 		prod.searchprod("mobile");
 		Thread.sleep(5000);
@@ -65,6 +65,6 @@ public class testexecution extends baseclass {
 		check.checkouting();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		uname.enterusername();
-		extent.flush();
+//		extent.flush();
 	}
 }
