@@ -11,12 +11,15 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentReporter;
 //import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+//import com.beust.jcommander.Parameters;
+import org.testng.annotations.Parameters;
 
 import automationpractice.framework1.addtocart;
 import automationpractice.framework1.baseclass;
 import automationpractice.framework1.checkout;
 import automationpractice.framework1.searchprod;
 import automationpractice.framework1.username;
+import io.qameta.allure.Feature;
 
 
 public class testexecution extends baseclass {
@@ -51,20 +54,30 @@ public class testexecution extends baseclass {
 //		extent.attachReporter(reporter);
 //		extent.setSystemInfo("Tester", "Rohit Muley");
 //	}
-	
+
 	@Test
-	public void Initialization() throws InterruptedException
+	@Feature("Login Feature")
+	@Parameters("productname")
+	public void Initialization(String productname) throws InterruptedException
 	{
 		
 //		extent.createTest("First Test");
 //		prod.searchproduct();
-		prod.searchprod("mobile");
-		Thread.sleep(5000);
-		cart.addtocart();
-		Thread.sleep(5000);
-		check.checkouting();
+		
+		prod.searchprod(productname);
+//		Thread.sleep(5000);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		cart.addtocart();
+//		Thread.sleep(5000);
+		check.checkouting();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		uname.enterusername();
+		System.out.println("this is my mobile");
 //		extent.flush();
+	}
+	@Test
+	public void demo()
+	{
+		System.out.println("I got my mobile");
 	}
 }
